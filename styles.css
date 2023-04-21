@@ -15,6 +15,7 @@ body {
 
 .navbar {
     background-color: black;
+    height: 75px;
     width: 100%;
     display: flex;
     position: sticky;
@@ -35,6 +36,22 @@ body {
     list-style: none;
     align-items: center;
     justify-content: right;
+}
+
+#blip {
+    border: 0px;
+    display: flex;
+    border-style: none;
+    border-radius: 1000px;
+    background-color: transparent;
+    margin-left: 50px;
+    width: 30px;
+    height: 30px;
+
+    animation-name: blip;
+    animation-duration: 1s;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease-in;
 }
 
 .navbar_directory_item {
@@ -82,7 +99,6 @@ body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: left;
 
-    animation-delay: 0.2s;
     animation-name: slideIn;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
@@ -91,9 +107,21 @@ body {
 
 @keyframes slideIn {
     from{
-        color: black;
+        color: transparent;
     }
     to{
         font-color: magenta;
+    }
+}
+
+@keyframes blip {
+    0% {
+        background-color: transparent;
+    }
+    50% {
+        background-color: magenta;
+    }
+    100% {
+        background-color: transparent;
     }
 }
