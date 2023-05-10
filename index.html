@@ -9,23 +9,41 @@
 
     <title>David Kipnis</title>
 
-    <script src="darkMode.js"></script>
+    <script src="displays.js"></script>
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="navbar_container">
-            <h1 id="blip"></h1>
-            <ol id="navbar_directory">
-                <a href="/" class="navbar_directory_item">About</a>
-                <a href="/" class="navbar_directory_item">Projects</a>
-                <a href="/" class="navbar_directory_item">Contact</a>
-            </ol>
+    <div class="container">
+        <div class="slides" id="Intro">
+            <div class="inner_slide">
+                <div class="inner_slide_container">
+                    <h1 id="intro_text" class="header_text">
+                    </h1>
+                </div>
+            </div>
+            <div class="inner_slide">
+                <ul id="directory">
+                    <li>
+                        <a href="#About">About</a>    
+                    </li>
+                    <li>
+                        <a href="#Projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </nav>
-    <div class="content">
-        <!-- <h1 class="main_header">Hi.</h1>
-        <h1 class="normal_text">I'm David</h1> -->
+        <div class="slides" id="About">
+            <h1>About</h1>
+        </div>
+        <div class="slides" id="Projects">
+            <h1>Projects</h1>
+        </div>
+        <div class="slides" id="Contact">
+            <h1>Contact</h1>
+        </div>
     </div>
 </body>
 </html>
