@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family:'Courier New', Courier, monospace;
-    color: rgb(255, 215, 166);
+    color: #fff;
 
     box-sizing: border-box;
 }
@@ -20,7 +20,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.slides {
+.slide {
     width: 100%;
     height: 100vh;
     align-items: center;
@@ -30,24 +30,10 @@ html {
     scroll-behavior: smooth;
 }
 
-.inner_slide {
-    width: 50%;
-    height: 100vh;
-    display: flex;
-    vertical-align: middle;
-    text-align: center;
-
-    align-content: center;
+#slide_container {
+    width: 100%;
     justify-content: center;
-}
-
-.inner_slide_container {
-    width: 50%;
-    height: 10%;
-
     align-items: center;
-    vertical-align: middle;
-    justify-content: center;
     display: flex;
 }
 
@@ -56,19 +42,61 @@ html {
     border-width: 3px;
     border-radius: 10px;
 
-    padding: 20px 20px;
+    text-align: center;
 
-    animation: slideIn;
+    padding: 20px 20px;
+    margin-right: 10%;
+    margin-left: 20%;
+
+    height: 10%;
+    width: 25%;
+
+    animation: fadeInBorder;
     animation-iteration-count: 1;
-    animation-duration: 0.5s;
+    animation-duration: 1.25s;
+
+    overflow: hidden;
 }
 
 #directory {
     list-style: none;
+    width: 50%;
+    height: 10%;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#directory li a {
+    float: left;
+
+    padding: 15px 15px;
+
+    text-decoration: none;
+    font-size: 1.5rem;
+
+    border-style: none;
+    border-radius: 5px;
+    background-color: transparent;
+
+    margin: 5px;
+
+    animation: fadeIn;
+    animation-iteration-count: 1;
+    animation-duration: 1.25s;
+
+    transition: all 0.2s ease;
+}
+
+#directory li a:hover {
+    color: #6940ff;
+    background-color: #fff;
+    transition: all 0.2s ease;
 }
 
 #Intro {
-    background: linear-gradient(190deg, #41c3ff, #9553ff)
+    background: linear-gradient(190deg, #41c3ff, #ba25ff)
 }
 
 #About {
@@ -83,19 +111,25 @@ html {
     background: linear-gradient(190deg, #85ff69, #ebff7b)
 }
 
-@keyframes slideIn {
+@keyframes fadeInBorder {
     0% {
-        color: transparent;
+        border-color: transparent;
     }
     25% {
-        color: transparent;
+        border-color: transparent;
+    }
+    50% {
+        border-color: transparent;
+    }
+    75% {
+        border-color: transparent;
     }
     100% {
-        color: rgb(255, 215, 166);
+        border-color: #fff;
     }
 }
 
-@keyframes slideInDelay {
+@keyframes fadeIn {
     0% {
         color: transparent;
     }
@@ -105,7 +139,10 @@ html {
     50% {
         color: transparent;
     }
+    75% {
+        color: transparent;
+    }
     100% {
-        color: rgb(255, 215, 166);
+        border: #fff;
     }
 }

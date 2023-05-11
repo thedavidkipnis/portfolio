@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="project_slide_styles.css"> 
 
     <title>David Kipnis</title>
 
@@ -14,18 +15,10 @@
 
 <body>
     <div class="container">
-        <div class="slides" id="Intro">
-            <div class="inner_slide">
-                <div class="inner_slide_container">
-                    <h1 id="intro_text" class="header_text">
-                    </h1>
-                </div>
-            </div>
-            <div class="inner_slide">
+        <div class="slide" id="Intro">
+            <div id="slide_container">
+                <h1 id="intro_text" class="header_text"></h1>
                 <ul id="directory">
-                    <li>
-                        <a href="#About">About</a>    
-                    </li>
                     <li>
                         <a href="#Projects">Projects</a>
                     </li>
@@ -35,14 +28,29 @@
                 </ul>
             </div>
         </div>
-        <div class="slides" id="About">
-            <h1>About</h1>
+
+        <div class="projects_slide" id="Projects">
+            <div class="row">
+                <div class="column">
+                    <img src="assets/vikingbot.png" alt="vikingbot" class="projects_image">
+                </div>
+                <div class="column">
+                    <img src="assets/JTA.png" alt="jta" class="projects_image">
+                </div>
+                <div class="column">
+                    <img src="assets/TASQ.png" alt="tasq" class="projects_image">
+                </div>
+            </div>
         </div>
-        <div class="slides" id="Projects">
-            <h1>Projects</h1>
-        </div>
-        <div class="slides" id="Contact">
-            <h1>Contact</h1>
+        <div class="slide" id="Contact">
+            <div class="row">
+                <div class="column">
+                    <img src="assets/gmail_icon.webp" alt="gmail" class="projects_image">
+                </div>
+                <div class="column">
+                    <img src="assets/git_logo.png" alt="git" class="projects_image">
+                </div>
+            </div>
         </div>
     </div>
 </body>
