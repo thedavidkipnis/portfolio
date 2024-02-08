@@ -30,7 +30,7 @@ html {
     scroll-behavior: smooth;
 }
 
-#slide_container {
+.slide_container {
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -68,7 +68,7 @@ html {
     text-align: center;
 }
 
-#directory li a {
+.list_item {
     float: left;
 
     padding: 15px 15px;
@@ -89,7 +89,7 @@ html {
     transition: all 0.2s ease;
 }
 
-#directory li a:hover {
+.list_item:hover {
     color: #6940ff;
     background-color: #fff;
     transition: all 0.2s ease;

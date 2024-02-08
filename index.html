@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="project_slide_styles.css"> 
+    <link rel="stylesheet" href="contact_slide_styles.css"> 
 
     <title>David Kipnis</title>
 
@@ -16,14 +17,14 @@
 <body>
     <div class="container">
         <div class="slide" id="Intro">
-            <div id="slide_container">
+            <div class="slide_container">
                 <h1 id="intro_text" class="header_text"></h1>
                 <ul id="directory">
                     <li>
-                        <a href="#Projects">Projects</a>
+                        <a href="#Projects" class="list_item">Projects</a>
                     </li>
                     <li>
-                        <a href="#Contact">Contact</a>
+                        <a href="#Contact" class="list_item">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -43,13 +44,15 @@
             </div>
         </div>
         <div class="slide" id="Contact">
-            <div class="row">
-                <div class="column">
-                    <img src="assets/gmail_icon.webp" alt="gmail" class="projects_image">
-                </div>
-                <div class="column">
-                    <img src="assets/git_logo.png" alt="git" class="projects_image">
-                </div>
+            <div class="slide_container">
+                <ul id="contact_directory">
+                    <li>
+                        <a href="#Projects" class="list_item">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#Contact" class="list_item">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

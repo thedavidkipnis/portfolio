@@ -1,0 +1,11 @@
+#contact_directory {
+    list-style: none;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact_directory_item {
+    
+}
