@@ -68,7 +68,7 @@ html {
     text-align: center;
 }
 
-.list_item {
+#directory .list_item {
     float: left;
 
     padding: 15px 15px;
@@ -89,7 +89,7 @@ html {
     transition: all 0.2s ease;
 }
 
-.list_item:hover {
+#directory .list_item:hover {
     color: #6940ff;
     background-color: #fff;
     transition: all 0.2s ease;
@@ -115,13 +115,7 @@ html {
     0% {
         border-color: transparent;
     }
-    25% {
-        border-color: transparent;
-    }
-    50% {
-        border-color: transparent;
-    }
-    75% {
+    35% {
         border-color: transparent;
     }
     100% {
@@ -133,13 +127,7 @@ html {
     0% {
         color: transparent;
     }
-    25% {
-        color: transparent;
-    }
-    50% {
-        color: transparent;
-    }
-    75% {
+    35% {
         color: transparent;
     }
     100% {

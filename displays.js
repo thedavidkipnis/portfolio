@@ -1,6 +1,6 @@
 var i = 0;
 var txt = "Hi! I'm David";
-var speed = 50;
+var speed = 35;
 
 function typeWriter() {
     if (i < txt.length) {
