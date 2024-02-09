@@ -120,9 +120,11 @@ html {
 @keyframes fadeInBorder {
     0% {
         border-color: transparent;
+        display: none;
     }
     35% {
         border-color: transparent;
+        display: none;
     }
     100% {
         /* border-color: #fff; */
@@ -133,9 +135,11 @@ html {
 @keyframes fadeIn {
     0% {
         color: transparent;
+        display: none;
     }
     35% {
         color: transparent;
+        display: none;
     }
     100% {
         /* border: #fff; */
