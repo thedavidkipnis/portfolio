@@ -95,8 +95,9 @@ html {
     /* color: #6940ff;
     background-color: #fff;
     transition: all 0.2s ease; */
+    font-weight: normal;
     background-color: black;
-    color:white;
+    color: burlywood;
     transition: all 0.2s ease;
 }
 
@@ -106,15 +107,18 @@ html {
 }
 
 #About {
-    background: linear-gradient(190deg, #ffc041, #8cff40)
+    /* background: linear-gradient(190deg, #ffc041, #8cff40) */
+    background: whitesmoke;
 }
 
 #Projects {
-    background: linear-gradient(190deg, #ff145b, #4096ff)
+    /* background: linear-gradient(190deg, #ff145b, #4096ff) */
+    background: whitesmoke;
 }
 
 #Contact {
-    background: linear-gradient(190deg, #85ff69, #ebff7b)
+    /* background: linear-gradient(190deg, #85ff69, #ebff7b) */
+    background: whitesmoke;
 }
 
 @keyframes fadeInBorder {
