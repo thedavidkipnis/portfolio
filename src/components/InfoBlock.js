@@ -1,8 +1,8 @@
 
-const InfoBlock = () => {
+const InfoBlock = (props) => {
     return (
       <div className="InfoBlock">
-        InfoBlock
+        <a href={props.link}>{props.text}</a>
       </div>
     );
   }
