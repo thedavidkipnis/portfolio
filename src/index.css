@@ -1,0 +1,18 @@
+body, html {
+    margin:0;
+    padding:0;
+}
+
+.Navbar {
+    width: 100%;
+    min-height: 4vh;
+    background-color: slategrey;
+}
+
+.MainPage {
+    height: 96vh;
+}
+
+.InfoBlock {
+    background-color: slategrey;
+}
