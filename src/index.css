@@ -1,12 +1,32 @@
 body, html {
     margin:0;
     padding:0;
+
+    --font-color: white;
+    --child-component-color: slategray;
+
+    --main-page-color: white;
+}
+
+body.dark-mode {
+    --child-component-color: rgb(198, 198, 198);
+    --main-page-color: rgb(30, 29, 29);
 }
 
 .Navbar {
     width: 100%;
     min-height: 4vh;
-    background-color: slategrey;
+    background-color: var(--child-component-color);
+
+    display: flex;
+    justify-content: right;
+}
+
+.DarkModeButton {
+    height: '3vh'; 
+    width: '3vh'; 
+    margin-right: '0.5vh'; 
+    margin-top: '0.5vh'; 
 }
 
 .MainPage {
@@ -16,6 +36,8 @@ body, html {
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    background-color: var(--main-page-color);
 }
 
 .InfoBlock {
@@ -23,6 +45,8 @@ body, html {
     width: 16vw;
 
     margin: 0 0 30px 0;
+    border-radius: 10px;
 
-    background-color: slategrey;
+    background-color: var(--child-component-color);
+    color: var(--font-color)
 }
