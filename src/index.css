@@ -6,11 +6,15 @@ body, html {
     --child-component-color: slategray;
 
     --main-page-color: white;
+
+    --global-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body.dark-mode {
     --child-component-color: rgb(198, 198, 198);
     --main-page-color: rgb(30, 29, 29);
+    --font-color: black;
+
 }
 
 .Navbar {
@@ -48,5 +52,16 @@ body.dark-mode {
     border-radius: 10px;
 
     background-color: var(--child-component-color);
-    color: var(--font-color)
+    color: var(--font-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--global-font);
+    color:var(--font-color);
+}
+
+a:link {
+    text-decoration: none !important;
 }
