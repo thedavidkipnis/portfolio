@@ -1,11 +1,14 @@
 import InfoBlock from "./InfoBlock";
 
 const MainPage = () =>  {
+
+    const contactLinks = ['https://www.linkedin.com/in/thedavidkipnis/', 'https://github.com/thedavidkipnis/']
+
     return (
       <div className="MainPage">
-        <InfoBlock text={'projects'} link={'https://github.com/thedavidkipnis'}/>
-        <InfoBlock text={'research'} link={'https://ieeexplore.ieee.org/document/10216577'}/>
-        <InfoBlock text={'contact'} link={'https://www.linkedin.com/in/thedavidkipnis/'}/>
+        <InfoBlock text={'projects'} entries={[]}/>
+        <InfoBlock text={'research'} entries={[]}/>
+        <InfoBlock text={'contact'} entries={contactLinks}/>
       </div>
     );
   }

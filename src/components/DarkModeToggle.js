@@ -16,8 +16,7 @@ const DarkModeToggle = () => {
     };
   
     return (
-      <button onClick={toggleDarkMode} className="DarkModeButton"
-      style={{height: '3vh', width: '3vh', marginRight: '0.5vh', marginTop: '0.5vh'}}>
+      <button onClick={toggleDarkMode} className="DarkModeButton">
         X
       </button>
     );
