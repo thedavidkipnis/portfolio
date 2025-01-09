@@ -115,3 +115,14 @@ body.dark-mode {
 a:link {
     text-decoration: none !important;
 }
+
+
+
+.BugThatRunsAround {
+    width: 3vw;
+    height: 3vh;
+    position: absolute;
+
+    background-color: var(--navbar-strip-color);
+    border-radius: 50px;
+}
