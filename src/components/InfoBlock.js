@@ -4,18 +4,20 @@ const InfoBlock = (props) => {
 
     const [isExpanded, expandBlock] = useState(false);
 
-    const expandedStyle = {height: '8vh', width: '32vh', borderRadius: '10px'}
-    const nonExpanded = {height: '4vh'}
+    const expandedStyle = {height: '16vh', width: '64vh', borderRadius: '30px'}
+    const nonExpanded = {height: '8vh'}
 
     return (
       <div className="InfoBlock"
-      style={isExpanded ? expandedStyle : nonExpanded}
-      onClick={() => expandBlock(!isExpanded)}>
+      style={isExpanded ? expandedStyle : nonExpanded} 
+      onMouseEnter={() => expandBlock(!isExpanded)}
+      onMouseLeave={() => expandBlock(!isExpanded)}
+      >
         {isExpanded ? '': props.text}
 
         <ul style={isExpanded ? {} : {display:'none'}}>
           {props.entries.map(item => {
-            return <li><a href={item}>{item}</a></li>
+            return <li><a href={item[1]}>{item[0]}</a></li>
           })}
         </ul>
       </div>

@@ -2,18 +2,24 @@ body, html {
     margin:0;
     padding:0;
 
+    font-size: 1.7vh;
+
     --font-color: white;
-    --child-component-color: slategray;
+    --child-component-color: rgb(37,68,65);
+    --child-component-hover-color: rgb(119, 255, 214);
+    --navbar-strip-color: rgb(28,254,186);
 
     --main-page-color: white;
-
     --global-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body.dark-mode {
-    --child-component-color: rgb(198, 198, 198);
-    --main-page-color: rgb(30, 29, 29);
-    --font-color: black;
+    --child-component-color: rgb(77,100,141);
+    --child-component-hover-color: rgb(129, 240, 255);
+    --main-page-color: rgb(30,31,38);
+    --font-color: rgb(30,31,38);
+
+    --navbar-strip-color: rgb(28, 228, 254);
 
 }
 
@@ -24,19 +30,47 @@ body.dark-mode {
 
     display: flex;
     justify-content: right;
+
+    transition: background-color 0.3s;
 }
 
 .DarkModeButton {
     height: 3vh; 
-    width: 3vh; 
     margin-right: 0.5vh; 
     margin-top: 0.5vh; 
+    
+    border-style: solid;
+    border-width: 3px;
+    background-color: var(--child-component-color);
+    color: var(--navbar-strip-color);
+    border-color: var(--navbar-strip-color);
+    border-radius: 10px;
+
+    cursor: pointer;
+
     -webkit-user-select: none; /* Safari */
     user-select: none;
+
+    transition: background-color 0.3s, border-radius 0.3s;
+
+}
+
+.DarkModeButton:hover {
+    background-color: var(--child-component-hover-color);
+    border-radius: 0px;
+
+    transition: background-color 0.3s, border-radius 0.3s;
+}
+
+.NavBarStrip {
+    height: 1vh;
+    background-color: var(--navbar-strip-color);
+
+    transition: background-color 0.3s;
 }
 
 .MainPage {
-    height: 94vh;
+    height: 93vh;
     padding-top: 2vh;
 
     display: flex;
@@ -45,16 +79,18 @@ body.dark-mode {
     flex-direction: column;
 
     background-color: var(--main-page-color);
+
+    transition: background-color 0.3s;
 }
 
 .InfoBlock {
-    height: 4vh;
-    width: 16vw;
+    height: 8vh;
+    width: 32vw;
 
-    transition: width 0.3s, height 0.3s, border-radius 0.3s;
+    transition: width 0.3s, height 0.3s, border-radius 0.3s, background-color 0.3s;
 
     margin: 0 0 30px 0;
-    border-radius: 10px 0 10px 0;
+    border-radius: 5px;
 
     background-color: var(--child-component-color);
     color: var(--font-color);
@@ -69,6 +105,11 @@ body.dark-mode {
     -webkit-user-select: none; /* Safari */
     user-select: none;
       
+}
+
+.InfoBlock:hover {
+    background-color: var(--child-component-hover-color);
+    transition: width 0.3s, height 0.3s, border-radius 0.3s, background-color 0.2s;
 }
 
 a:link {
