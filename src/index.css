@@ -26,7 +26,7 @@ body.dark-mode {
 .Navbar {
     width: 100%;
     height: 4vh;
-    min-height: 40px;
+    /* min-height: 40px; */
     background-color: var(--child-component-color);
 
     display: flex;
@@ -37,7 +37,7 @@ body.dark-mode {
 
 .DarkModeButton {
     height: 3vh; 
-    min-height: 30px;
+    /* min-height: 30px; */
     margin-right: 0.5vh; 
     margin-top: 0.5vh; 
     
