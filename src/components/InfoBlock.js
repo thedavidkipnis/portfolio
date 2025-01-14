@@ -4,7 +4,7 @@ const InfoBlock = (props) => {
 
     const [isExpanded, expandBlock] = useState(false);
 
-    const expandedStyle = {height: '16vh', width: '32vw', borderRadius: '10px'}
+    const expandedStyle = {height: '16vh', width: '32vw', borderRadius: '5px'}
     const nonExpanded = {height: '8vh', width: '16vw'}
 
     return (
