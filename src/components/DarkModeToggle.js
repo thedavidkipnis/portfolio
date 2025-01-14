@@ -25,7 +25,7 @@ const DarkModeToggle = () => {
       onMouseEnter={() => expandButton(!isExpanded)}
       onMouseLeave={() => expandButton(!isExpanded)}
       >
-        <span>{isExpanded ? isDarkMode ? 'Light Mode' : 'Dark Mode' : '>'}</span>
+        <span>{isExpanded ? isDarkMode ? 'Light Mode' : 'Dark Mode' : '>>'}</span>
       </button>
     );
   }
