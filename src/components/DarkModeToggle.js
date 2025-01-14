@@ -2,6 +2,10 @@ import { useState, useEffect } from 'react';
 
 const DarkModeToggle = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
+    const [isExpanded, expandButton] = useState(false);
+
+    const expandedStyle = {width: '8vw'}
+    const nonExpanded = {width: '4vw'}
   
     useEffect(() => {
       if (isDarkMode) {
@@ -16,8 +20,12 @@ const DarkModeToggle = () => {
     };
   
     return (
-      <button onClick={toggleDarkMode} className="DarkModeButton">
-        <span>{isDarkMode ? 'Light Mode' : 'Dark Mode'}</span>
+      <button onClick={toggleDarkMode} className="DarkModeButton"
+      style={isExpanded ? expandedStyle : nonExpanded}
+      onMouseEnter={() => expandButton(!isExpanded)}
+      onMouseLeave={() => expandButton(!isExpanded)}
+      >
+        <span>{isExpanded ? isDarkMode ? 'Light Mode' : 'Dark Mode' : '>'}</span>
       </button>
     );
   }

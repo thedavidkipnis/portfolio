@@ -10,7 +10,6 @@ const MainPage = () =>  {
 
     return (
       <div className="MainPage">
-        <InfoBlock text={'Hi! :D'} entries ={introText}/>
         <InfoBlock text={'projects'} entries={projectLinks}/>
         <InfoBlock text={'research'} entries={researchLinks}/>
         <InfoBlock text={'contact'} entries={contactLinks}/>
