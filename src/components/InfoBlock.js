@@ -7,6 +7,8 @@ const InfoBlock = (props) => {
     const expandedStyle = {height: '16vh', width: '32vw', borderRadius: '5px', alignItems: 'center'}
     const nonExpanded = {height: '8vh', width: '16vw'}
 
+    const disabledLinksStyle = {pointerEvents: 'none', cursor: 'default', textDecoration: 'none'}
+
     return (
       <div className="InfoBlock"
       style={isExpanded ? expandedStyle : nonExpanded} 
@@ -20,7 +22,7 @@ const InfoBlock = (props) => {
 
         <ul style={isExpanded ? {} : {display:'none'}}>
           {props.entries.map(item => {
-            return <li><a href={item[1]}>{item[0]}</a></li>
+            return <li><a href={item[1]} style={props.linksDisabled ? disabledLinksStyle : {}}>{item[0]}</a></li>
           })}
         </ul>
       </div>
