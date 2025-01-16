@@ -101,7 +101,7 @@ body.dark-mode {
     border-color: var(--main-color);
 
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 
     font-family: var(--global-font);
 
@@ -111,12 +111,15 @@ body.dark-mode {
 }
 
 .InfoBlockText {
-    margin-left: 10%;
+    margin-left: 5%;
+    margin-bottom: 5%;
 }
 
 .InfoBlock li {
-    display: inline-block;
+    /* display: inline-block; */
+    list-style: none;
     margin-right: 10px;
+    margin-bottom: 3px;
 }
 
 .InfoBlock:hover {
