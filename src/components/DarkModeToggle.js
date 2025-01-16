@@ -1,7 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
+import { ThemeContext } from '../ThemeContext';
 
 const DarkModeToggle = () => {
-    const [isDarkMode, setIsDarkMode] = useState(false);
+
+    const { theme, setTheme } = useContext(ThemeContext);
+
+    const [isDarkMode, setIsDarkMode] = useState(theme == 'light-mode');
     const [isExpanded, expandButton] = useState(false);
 
     const expandedStyle = {width: '8vw'}
